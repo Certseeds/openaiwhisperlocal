@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "openaiwhisperlocal"
+version = "0.1.0"
+description = "run openai-whisper in local"
+authors = ["Certseeds <51754303+Certseeds@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+priority = "primary"
+
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple"
+priority = "supplemental"
+
+
+[[tool.poetry.source]]
+name = "pytorch-gpu-src-121"
+url = "https://mirror.sjtu.edu.cn/pytorch-wheels/cu121"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
