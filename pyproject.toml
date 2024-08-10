@@ -7,6 +7,8 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+numpy = "<2.0.0"
+torch = "2.3.1"
 
 
 [[tool.poetry.source]]
@@ -20,10 +22,9 @@ name = "aliyun"
 url = "https://mirrors.aliyun.com/pypi/simple"
 priority = "supplemental"
 
-
 [[tool.poetry.source]]
-name = "pytorch-gpu-src-121"
-url = "https://mirror.sjtu.edu.cn/pytorch-wheels/cu121"
+name = "pytorch-gpu-src"
+url = "https://mirror.sjtu.edu.cn/pytorch-wheels/torch_stable.html"
 priority = "explicit"
 
 [build-system]
